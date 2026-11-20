@@ -1,5 +1,3 @@
-<!-- PUBLISH FILE (English only). Replace [POLICY_URL] before hosting. Remove this comment. Minimum age appears only in Section 10 (currently 13). -->
-
 # SN NetTerm Privacy Policy
 
 **Effective date:** 2026-11-20
@@ -7,7 +5,7 @@
 
 This Privacy Policy describes how **Neslihan Kevser Sakaoğlu**, trading as Soft Nova ("SN", "we", "us"), handles information in the **SN NetTerm** Android app (package `com.sn.netterm`, the "App"). SN NetTerm is a developer and network diagnostics toolbox (REST client, TCP/UDP client and server, Wake-on-LAN, ping, MQTT and NATS clients, local mock server, automation rules and home-screen widgets).
 
-**Short version:** We do not run servers for the App, there are no user accounts, and we do not collect, receive or store the content you work with (hosts, requests, responses, credentials, logs). That content stays on your device and is sent only to the targets you choose. The App shows ads served by Google AdMob, and Google collects limited device and usage data for that purpose (Section 4).
+**Short version:** We do not run servers for the App, there are no user accounts, and we do not collect, receive or store the content you work with (hosts, requests, responses, credentials, logs). That content stays on your device and is sent only to the targets you choose. The App shows ads served by Google AdMob, and Google collects limited device and usage data for that purpose (Section 4). If you allow it, the App also sends crash and error reports, without your content, to Google's Firebase Crashlytics (Section 4A).
 
 ## 1. Who is responsible
 
@@ -59,6 +57,16 @@ We do not send Google any of the content described in Section 2 (no requests, re
 
 The App does not use interstitial, rewarded or app-open ads, and does not use Google's Privacy Sandbox advertising APIs.
 
+## 4A. Crash and error reports (Firebase Crashlytics)
+
+If you allow it, the App sends crash reports and "application not responding" (ANR) reports to **Firebase Crashlytics**, a service of Google, so that we can find and fix bugs. This is **optional and off until you allow it**: the App asks you once on first launch, and you can change your choice at any time in **Settings**. If you turn it off, no further reports are sent.
+
+A report may contain: the crash stack trace (code locations only; error messages are removed before sending), device model, operating system version, app version, whether the app was in the foreground, memory and storage state, and a Firebase installation identifier that Crashlytics generates to count affected devices. Reports do not include your requests, responses, hosts, URLs, credentials, variables or logs. We do not set a user ID and do not link reports to your identity (the App has no accounts).
+
+Crashlytics does not use your Advertising ID. Google processes this data as our service provider under the Firebase terms (https://firebase.google.com/terms/crashlytics and https://firebase.google.com/support/privacy). Google keeps reports for a limited period set by Google and may process them outside your country (Section 12). We view reports in the Firebase console; we receive no other personal data through it.
+
+Where applicable (for example in the EEA, UK and Switzerland), the legal basis is your consent, which you can withdraw in **Settings**.
+
 ## 5. Permissions
 
 | Permission | Why |
@@ -78,11 +86,12 @@ The App does not request access to your location, contacts, camera, microphone, 
 
 ## 7. Do we share or sell your data?
 
-We do not sell personal data and do not share it with third parties, except that the Google Mobile Ads SDK collects and shares data with Google as described in Section 4. We have no analytics, crash-reporting or other third-party SDKs besides Google AdMob and Google's User Messaging Platform.
+We do not sell personal data and do not share it with third parties, except (a) the Google Mobile Ads SDK, which collects and shares data with Google as described in Section 4, and (b) Firebase Crashlytics, which sends crash reports to Google as described in Section 4A, only if you allow it. We have no other analytics or third-party SDKs besides Google AdMob, Google's User Messaging Platform and Firebase Crashlytics.
 
 ## 8. Retention and deletion
 
-- **We hold no data to delete.** We do not store your data on any server, so there is nothing for us to delete.
+- **Data we hold.** We do not store your App content on any server. If you allowed crash reports, Google keeps them in our Firebase project for a limited period set by Google. To ask us to delete crash data linked to your device, e-mail softnova.global@gmail.com; we will delete it where technically possible (the installation identifier is not linked to your identity, so we may ask for details that help locate it).
+- **Crash reports.** You can turn them off at any time in Settings; reports already sent expire automatically.
 - **Data on your device** stays until you delete it in the App, clear the App's storage (Android Settings > Apps > SN NetTerm > Storage > Clear data), or uninstall the App. Uninstalling removes all App data from the device, including Keystore-protected secrets.
 - **Google backup.** If Android Auto Backup saved App data to your Google account, you can delete that backup yourself in your Google account or device backup settings (Google One / Google Drive > Backups > select your device > delete backup, or manage backups at https://drive.google.com/drive/backups). We cannot access or delete this backup. The App has no in-app control to delete the backup.
 - **Ad-related data** processed by Google is managed by Google (https://myaccount.google.com/data-and-personalization).
@@ -90,7 +99,7 @@ We do not sell personal data and do not share it with third parties, except that
 
 ## 9. Security
 
-Secrets are encrypted at rest with AES-256-GCM using a non-exportable Android Keystore key (hardware-backed where the device supports it), and are excluded from backup. Authorization headers and secret values are masked in logs and exports by default. App data is stored in app-private storage not accessible to other apps on a non-rooted device. No method is absolutely secure, and the security of data in transit depends on the protocol you choose (Section 3).
+Secrets are encrypted at rest with AES-256-GCM using a non-exportable Android Keystore key (hardware-backed where the device supports it), and are excluded from backup. Authorization headers and secret values are masked in logs and exports by default. App data is stored in app-private storage not accessible to other apps on a non-rooted device. Crash reports have error messages removed before they are sent. No method is absolutely secure, and the security of data in transit depends on the protocol you choose (Section 3).
 
 ## 10. Children's privacy
 
@@ -102,7 +111,7 @@ Depending on your location (for example under the GDPR/UK GDPR, Turkish KVKK, or
 
 ## 12. International transfers
 
-Data processed by Google for ads may be processed in countries other than yours, subject to Google's safeguards. We do not transfer your data ourselves.
+Data processed by Google for ads and for crash reports may be processed in countries other than yours, subject to Google's safeguards. We do not transfer your data ourselves.
 
 ## 13. Changes to this policy
 
