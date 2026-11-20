@@ -112,4 +112,4 @@ We may update this policy, for example if the App adds features or SDKs. The new
 
 Neslihan Kevser Sakaoğlu (Soft Nova)
 Email: softnova.global@gmail.com
-Policy URL: [POLICY_URL]
+Policy URL: https://github.com/softnovaglobal/SN-NetTerm/blob/main/privacy-policy.md
